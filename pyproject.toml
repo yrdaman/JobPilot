@@ -1,7 +1,7 @@
 [project]
 name = "jobpilot"
 version = "0.1.0"
-description = "Add your description here"
+description = "Evidence-grounded RAG job application copilot"
 readme = "README.md"
 authors = [
     { name = "Rakesh Daman Yelakanti", email = "yrdaman196@gmail.com" }
@@ -14,9 +14,6 @@ dependencies = [
     "pypdf>=6.17.0",
     "streamlit",
 ]
-
-[project.scripts]
-jobpilot = "jobpilot:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
