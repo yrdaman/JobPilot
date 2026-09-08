@@ -544,6 +544,7 @@ if analyze:
             # -------------------------------------------------
 
             resume_path = Path("data") / resume_file.name
+            resume_path.parent.mkdir(parents=True, exist_ok=True)
             resume_path.write_bytes(resume_file.getvalue())
 
             resume_text = extract_text(resume_path)
